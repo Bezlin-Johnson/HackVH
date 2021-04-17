@@ -1,0 +1,18 @@
+.landingpagecss {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2d3047;
+  padding: 100px;
+  box-shadow: 0px 0px 100px #2d3047;
+}
+.langingpagebuttons {
+  border-color: #7f7eff;
+  border-width: 2px;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #2d3047;
+  color: #ff3562;
+}
