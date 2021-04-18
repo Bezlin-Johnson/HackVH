@@ -1,27 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-import fire from "./fire.js";
-import Otherw from "./otherways.js";
 class Landing extends Component {
-  state = {
-    user: null,
-    tree: false,
-  };
-  componentDidMount = () => {
-    fire.auth().onAuthStateChanged((user) => {
-      if (user) {
-        this.setState({ user: "yes" });
-      } else {
-        this.setState({ user: "no" });
-      }
-    });
-  };
-  other = () => {
-    if (this.state.tree == false) {
-      this.setState({ tree: true });
-    }
-  };
-
+  state = {};
   render() {
     return (
       <div className="landingpagecss">
@@ -29,10 +9,7 @@ class Landing extends Component {
         <button className="langingpagebuttons">Sign Up</button>
         <br />
         <br />
-        <button onClick={this.other} className="langingpagebuttons">
-          Login
-        </button>
-        {this.state.tree == true ? <Otherw /> : console.log()}
+        <button className="langingpagebuttons">Login</button>
       </div>
     );
   }
